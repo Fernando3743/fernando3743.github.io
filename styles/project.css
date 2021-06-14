@@ -1,0 +1,53 @@
+.project {
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-stack {
+  display: flex;
+  gap: 60px;
+  margin-top: -20px;
+}
+
+.project-stack p {
+  font: var(--button);
+  font-size: 16px;
+}
+
+.project-image {
+  padding-bottom: 50px;
+}
+
+.project-image img {
+  max-inline-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-block-start: 80px;
+    padding-block-end: 80px;
+  }
+
+  .project-description {
+    flex: 1;
+  }
+
+  .project-image {
+    max-width: 45vw;
+  }
+
+  .project:nth-child(odd) .project-image {
+    order: 2;
+    flex: 1;
+    text-align: center;
+  }
+}

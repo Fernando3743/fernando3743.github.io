@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./images/profile.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <img src="./images/logo.png" height="22" alt="logo" />
+          <nav class="menu" aria-label="main-navigation">
+            <ul>
+              <li>
+                <a class="is-active" href="#main">Hello</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="./CV2021.pdf" class="button" download>Curriculum</a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <section aria-label="main" class="hero" id="main">
+        <div class="hero-image">
+          <img src="./images/profile.png" alt="profile" height="100vw" />
+        </div>
+        <div class="hero-description">
+          <h1><span class="typing-effect">Hi there!</span>I'm Luis Fernando<span></span></h1>
+          <p>
+            I'm a Systems and Electrical engineering student who loves
+            programming and web development.
+          </p>
+          <div class="social">
+            <a class="button-icon" href="tel:+573108562542"
+              ><img src="./icons/icon-phone.svg"
+            /></a>
+            <a class="button-icon" href="mailto:fernando201022@hotmail.com"
+              ><img src="./icons/icon-important_mail.svg"
+            /></a>
+            <a
+              class="button-icon"
+              href="https://www.instagram.com/fernando_lara_s/"
+              ><img src="./icons/icon-instagram.svg"
+            /></a>
+            <a class="button-icon" href="https://github.com/Fernando3743"
+              ><img src="./icons/icon-github.svg"
+            /></a>
+            <a
+              class="button-icon"
+              href="https://www.linkedin.com/in/fernando-lara-0ab092157/"
+              ><img src="./icons/icon-linkedin.svg"
+            /></a>
+            <a class="button-icon" href="https://twitter.com/FernandoLara_37"
+              ><img src="./icons/icon-twitter_squared.svg"
+            /></a>
+          </div>
+          <a href="./CV2021.pdf" class="button" download>Download CV</a>
+        </div>
+      </section>
+      <div class="intro-projects">
+        <p>Here are some projects that I would like to show.</p>
+        <img
+          class="animate-bounce"
+          src="icons\arrow-down.png"
+          alt="arrow-down"
+          height="80"
+        />
+      </div>
+      <div class="project" id="projects">
+        <div class="project-image">
+          <img src="./images/img.png" alt="" />
+        </div>
+        <div class="project-description">
+          <a class="tittle" target="_blank" href="#">Realtime Chat</a>
+          <p>Realtime chatting app inspired in facebook's messenger.</p>
+          <div class="project-stack">
+            <div class="project-frontend">
+              <p>🚀 Frontend :</p>
+              <ul>
+                <li>ReactJS</li>
+                <li>Redux</li>
+                <li>TailwindCSS</li>
+                <li>Heroicons</li>
+              </ul>
+            </div>
+            <div class="project-backend">
+              <p>💻 Backend :</p>
+              <ul>
+                <li>Python</li>
+                <li>Django + Django channels</li>
+                <li>SQL</li>
+                <li>Redis</li>
+              </ul>
+            </div>
+          </div>
+          <a
+            target="_blank"
+            href="https://github.com/Fernando3743/messenger-2"
+            class="button is-secondary"
+            >Github Code</a
+          ><a target="_blank" href="https://youtu.be/WiiZd6-10V0" class="button"
+            >Youtube Preview</a
+          >
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-image">
+          <img src="./images/iPad.png" alt="" />
+        </div>
+        <div class="project-description">
+          <a class="tittle" target="_blank" href="#">Social Network</a>
+          <p>
+            Social network web application builded from scratch for Harvard's
+            CS50 course.
+          </p>
+          <div class="project-stack">
+            <div class="project-frontend">
+              <p>🚀 Frontend :</p>
+              <ul>
+                <li>ReactJS</li>
+                <li>VanillaJS</li>
+                <li>Bootstrap</li>
+                <li>AJAX</li>
+              </ul>
+            </div>
+            <div class="project-backend">
+              <p>💻 Backend :</p>
+              <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>SQL</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
+          <a
+            target="_blank"
+            href="https://youtu.be/3VhC16eS2Xk"
+            class="button is-secondary"
+            >youtube Preview</a
+          >
+        </div>
+      </div>
+      <div class="carousel-parent">
+        <div
+          class="carousel"
+          data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'
+        >
+          <div class="carousel-image">
+            <img src="./images/netflix.png" alt="amazon" />
+          </div>
+          <div class="carousel-image">
+            <img src="./images/amazon.png" alt="amazon" />
+          </div>
+          <div class="carousel-image">
+            <img src="./images/hulu.png" alt="amazon" />
+          </div>
+          <div class="carousel-image">
+            <img src="./images/facebook.png" alt="amazon" />
+          </div>
+        </div>
+        <div class="project-clones">
+          <div class="project-description">
+            <a class="tittle" target="_blank" href="#">Famous Apps Clones</a>
+            <p>Full builds in my github.</p>
+            <div class="project-stack">
+              <div class="project-frontend">
+                <p>🚀 Frontend :</p>
+                <ul>
+                  <li>ReactJS</li>
+                  <li>Redux</li>
+                  <li>NextJS</li>
+                  <li>TailwindCSS</li>
+                  <li>Heroicons</li>
+                </ul>
+              </div>
+              <div class="project-backend">
+                <p>💻 Backend :</p>
+                <ul>
+                  <li>NodeJS</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-button">
+            <a
+              target="_blank"
+              href="https://github.com/Fernando3743"
+              class="button is-secondary"
+              >Github Code</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <form
+        action="https://formsubmit.co/fernando201022@hotmail.com"
+        class="form"
+        method="POST"
+      >
+        <div class="form-content">
+          <h2 class="tittle">Contact</h2>
+          <p>
+            If you require more information please do not hesitate to contact
+            me.
+          </p>
+          <label for="form-name"
+            >Full Name<input
+              required
+              name="name"
+              id="form-name"
+              type="text"
+              placeholder="Name"
+          /></label>
+
+          <label for="form-name"
+            >Email<input
+              required
+              name="email"
+              id="form-email"
+              type="email"
+              placeholder="Email"
+          /></label>
+
+          <label for="form-name"
+            >Message<textarea
+              name="message"
+              placeholder="Message"
+              id="form-message"
+              cols="30"
+              rows="7"
+            ></textarea>
+          </label>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://fernando3743.github.io/Fernando3743/"
+          />
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </form>
+      <footer class="footer" id="contact">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="./images/logo.png" alt="" height="20" />
+          </div>
+          <div class="social">
+            <a class="button-icon" href="tel:+573108562542"
+              ><img src="./icons/icon-phone.svg"
+            /></a>
+            <a class="button-icon" href="mailto:fernando201022@hotmail.com"
+              ><img src="./icons/icon-important_mail.svg"
+            /></a>
+            <a
+              class="button-icon"
+              href="https://www.instagram.com/fernando_lara_s/"
+              ><img src="./icons/icon-instagram.svg"
+            /></a>
+            <a class="button-icon" href="https://github.com/Fernando3743"
+              ><img src="./icons/icon-github.svg"
+            /></a>
+            <a
+              class="button-icon"
+              href="https://www.linkedin.com/in/fernando-lara-0ab092157/"
+              ><img src="./icons/icon-linkedin.svg"
+            /></a>
+            <a class="button-icon" href="https://twitter.com/FernandoLara_37"
+              ><img src="./icons/icon-twitter_squared.svg"
+            /></a>
+          </div>
+          <div class="footer-copyright">
+            <p>Made with ❤ in Cali - Colombia</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

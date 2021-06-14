@@ -1,0 +1,12 @@
+.intro-projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.intro-projects p {
+ font: var(--headline5);
+}

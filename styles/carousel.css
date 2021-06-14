@@ -1,0 +1,30 @@
+.carousel-parent {
+  padding: 80px 5vw 0;
+  gap: 50px;
+}
+
+.carousel-image img {
+  max-inline-size: 100%;
+  margin: auto;
+}
+
+.project-clones {
+  padding-top: 20px;
+}
+
+.carousel-button {
+  padding-top: 50px;
+  flex: 1;
+}
+.carousel-button a {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .project-clones {
+    display: flex;
+  }
+  .carousel-button a {
+    margin-top: 80px;
+  }
+}
